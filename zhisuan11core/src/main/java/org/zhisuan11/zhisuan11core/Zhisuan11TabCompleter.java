@@ -19,6 +19,7 @@ public class Zhisuan11TabCompleter implements TabCompleter {
                 completions.add("help");
                 completions.add("info");
                 completions.add("broadcast");
+                completions.add("tp");
                 completions.add("reload");
                 return completions;
             }
