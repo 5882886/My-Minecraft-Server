@@ -14,11 +14,11 @@ public final class Zhisuan11core extends JavaPlugin {
     public void onEnable() {
         // Plugin startup logic
         System.out.println("  欢迎您使用智算11班服务器插件！ ");
-        System.out.println(" ■■■■■    ■■■■■      ■       ■   ");
-        System.out.println("       ■      ■            ■■     ■■   ");
-        System.out.println("     ■        ■■■■■      ■       ■   ");
-        System.out.println("   ■                  ■      ■       ■   ");
-        System.out.println(" ■■■■■    ■■■■■    ■■■   ■■■ ");
+        System.out.println(" ■■■■■    ■■■■■      ■     ■   ");
+        System.out.println("     ■    ■         ■■    ■■   ");
+        System.out.println("    ■     ■■■■■      ■     ■   ");
+        System.out.println("  ■           ■      ■     ■   ");
+        System.out.println(" ■■■■■    ■■■■■     ■■■   ■■■  ");
 
 
         Bukkit.getPluginCommand("zhisuan11").setExecutor(new Zhisuan11Command());
