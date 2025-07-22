@@ -15,8 +15,15 @@ JoinMessage:
 #设置服务器公告
 BroadCast:
   enabled: true
-  content: "&6遵守法律法规，禁止炸服等恶意破坏服务器的行为！"     #公告内容
+  content:
+    - "         &6&l[服务器公告]       "
+    - "&6遵守法律法规，禁止炸服等恶意破坏服务器的行为！"
+    - ""
   interval: 900              #循环时间间隔（单位：秒）
+
+#设置玩家重生位置
+Spawn:
+  teleport-to-spawn: true
 
 
 JoinItem:

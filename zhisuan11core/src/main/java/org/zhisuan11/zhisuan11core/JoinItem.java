@@ -15,7 +15,6 @@ public class JoinItem implements Listener {
     //初始物品套装
     public void onPlayerJoin(PlayerJoinEvent event) {
 
-
         if (!event.getPlayer().hasPlayedBefore()) {      //检查是否为第一次登录
 
             //获取first-join-item的节点内容并返回一个列表itemsConfig

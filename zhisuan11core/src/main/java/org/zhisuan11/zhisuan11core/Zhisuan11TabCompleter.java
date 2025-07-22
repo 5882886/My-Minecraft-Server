@@ -19,12 +19,12 @@ public class Zhisuan11TabCompleter implements TabCompleter {
                 completions.add("help");
                 completions.add("info");
                 completions.add("broadcast");
-                completions.add("tp");
                 completions.add("reload");
+                completions.add("setspawn");
                 return completions;
             }
 
-            if (args.length == 2 && args[0].equals("broadcast")) {
+            else if (args.length == 2 && args[0].equals("broadcast")) {
                 // 提供参数补全建议
                 List<String> completions = new ArrayList<>();   //创建参数补全列表
 
@@ -32,6 +32,24 @@ public class Zhisuan11TabCompleter implements TabCompleter {
                 return completions;
             }
         }
+
+        if (command.getName().equalsIgnoreCase("tp")) {
+            if (args.length == 1) {
+                List<String> completions = new ArrayList<>();
+
+                completions.add("@s");
+                completions.add("@p");
+                return completions;
+            }
+
+            else if (args.length == 2) {
+                List<String> completions = new ArrayList<>();
+
+                completions.add("spawn");
+                return completions;
+            }
+        }
+
         return null;
     }
 }

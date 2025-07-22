@@ -9,4 +9,6 @@ commands:
     description: "欢迎指令"
     permission: Zhisuan11.Main
     aliases: zs
-
+  tp:
+    description: "传送指令"
+    permission: Zhisuan11.tp
