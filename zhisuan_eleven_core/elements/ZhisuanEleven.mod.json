@@ -1,0 +1,11 @@
+{
+  "_fv": 73,
+  "_type": "tab",
+  "definition": {
+    "name": "Zhisuan Eleven",
+    "icon": {
+      "value": "CUSTOM:ZhisuanElevenLogo"
+    },
+    "showSearch": false
+  }
+}
