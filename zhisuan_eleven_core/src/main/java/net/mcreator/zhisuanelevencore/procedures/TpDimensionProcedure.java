@@ -46,8 +46,6 @@ public class TpDimensionProcedure {
 				if (_ent instanceof ServerPlayer _serverPlayer)
 					_serverPlayer.connection.teleport((world.getLevelData().getXSpawn()), (world.getLevelData().getYSpawn()), (world.getLevelData().getZSpawn()), _ent.getYRot(), _ent.getXRot());
 			}
-			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal("Changing dimension\u2026\u2026"), false);
 		}
 		if ((StringArgumentType.getString(arguments, "dim")).equals("surface")) {
 			if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
@@ -70,8 +68,8 @@ public class TpDimensionProcedure {
 				if (_ent instanceof ServerPlayer _serverPlayer)
 					_serverPlayer.connection.teleport((world.getLevelData().getXSpawn()), (world.getLevelData().getYSpawn()), (world.getLevelData().getZSpawn()), _ent.getYRot(), _ent.getXRot());
 			}
-			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal("Changing dimension\u2026\u2026"), false);
 		}
+		if (entity instanceof Player _player && !_player.level().isClientSide())
+			_player.displayClientMessage(Component.literal("Changing dimension\u2026\u2026"), false);
 	}
 }

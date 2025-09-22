@@ -134,8 +134,6 @@ Adding Libraries to Inheritance
 Reading Input: D:\Files\MCreatorWorkspaces\zhisuan_eleven_core\build\libs\modid-1.0.jar
 Adding input to inheritance map
 Processing entries
-Conflicting propagated mapping for net/mcreator/zhisuanelevencore/world/dimension/LobbyDimension$LobbySpecialEffectsHandler$1/getBrightnessDependentFogColor(Lnet/minecraft/world/phys/Vec3;F)Lnet/minecraft/world/phys/Vec3; from net/minecraft/client/renderer/DimensionSpecialEffects/getBrightnessDependentFogColor(Lnet/minecraft/world/phys/Vec3;F)Lnet/minecraft/world/phys/Vec3;: getBrightnessDependentFogColor -> m_5927_
-Conflicting propagated mapping for net/mcreator/zhisuanelevencore/world/dimension/LobbyDimension$LobbySpecialEffectsHandler$1/isFoggyAt(II)Z from net/minecraft/client/renderer/DimensionSpecialEffects/isFoggyAt(II)Z: isFoggyAt -> m_5781_
 Conflicting propagated mapping for net/minecraftforge/common/BasicItemListing/getOffer(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/util/RandomSource;)Lnet/minecraft/world/item/trading/MerchantOffer; from net/minecraft/world/entity/npc/VillagerTrades$ItemListing/getOffer(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/util/RandomSource;)Lnet/minecraft/world/item/trading/MerchantOffer;: getOffer -> m_213663_
 Conflicting propagated mapping for net/minecraft/world/entity/LivingEntity/lambda$addAdditionalSaveData$3(Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/nbt/Tag;)V from net/minecraft/world/entity/player/Player/lambda$addAdditionalSaveData$3(Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/nbt/Tag;)V: lambda$addAdditionalSaveData$3 -> m_219754_
 Conflicting propagated mapping for net/minecraftforge/common/util/FakePlayer/isInvulnerableTo(Lnet/minecraft/world/damagesource/DamageSource;)Z from net/minecraft/server/level/ServerPlayer/isInvulnerableTo(Lnet/minecraft/world/damagesource/DamageSource;)Z: isInvulnerableTo -> m_6673_
@@ -177,9 +175,12 @@ Writing Output: D:\Files\MCreatorWorkspaces\zhisuan_eleven_core\build\reobfJar\o
   assets/zhisuan_eleven_core/textures/painting/academy_2.png
   assets/zhisuan_eleven_core/textures/painting/tuan_hui.png
   assets/zhisuan_eleven_core/textures/painting/tuan_qi.png
+  assets/zhisuan_eleven_core/textures/painting/zhisuan_eleven_ascii.png
   assets/zhisuan_eleven_core/textures/painting/zhisuan_eleven_icon.png
   assets/zhisuan_eleven_core/textures/tuan_hui.png
   assets/zhisuan_eleven_core/textures/tuan_qi.png
+  assets/zhisuan_eleven_core/textures/zhisuaneleven.png
+  catalogueImageIcon.png
   data/
   data/minecraft/
   data/minecraft/tags/
