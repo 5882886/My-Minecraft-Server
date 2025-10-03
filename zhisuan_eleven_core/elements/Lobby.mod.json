@@ -12,9 +12,9 @@
       "value": "Blocks.STONE#0"
     },
     "fluidBlock": {
-      "value": "Blocks.FLOWING_WATER"
+      "value": "Blocks.VOID_AIR"
     },
-    "seaLevel": 63,
+    "seaLevel": -64,
     "generateOreVeins": false,
     "generateAquifers": false,
     "horizontalNoiseSize": 1,

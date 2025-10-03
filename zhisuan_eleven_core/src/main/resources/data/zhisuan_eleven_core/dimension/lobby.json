@@ -21,7 +21,7 @@
     },
     "settings": {
       "name": "zhisuan_eleven_core:lobby",
-      "sea_level": 63,
+      "sea_level": -64,
       "legacy_random_source": false,
       "disable_mob_generation": false,
       "aquifers_enabled": true,
@@ -30,10 +30,7 @@
         "Name": "minecraft:stone"
       },
       "default_fluid": {
-        "Name": "minecraft:water",
-        "Properties": {
-          "level": "0"
-        }
+        "Name": "minecraft:void_air"
       },
       "spawn_target": [],
       "noise": {
