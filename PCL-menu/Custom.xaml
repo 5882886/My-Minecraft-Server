@@ -31,30 +31,40 @@
 
 <local:MyCard Title="常用网站汇总" Margin="0,0,0,15" CanSwap="true" IsSwapped="true">
     <StackPanel Margin="25,40,23,15">
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <local:MyButton Width="140" Margin="0,0,10,0" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
-                    Text="Bilibili" EventType="打开网页" EventData="https://www.bilibili.com/" />
-            <local:MyButton Width="140" Margin="0,0,10,0" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
-                    Text="Github" EventType="打开网页" EventData="https://github.com/" />
-            <local:MyButton Width="140" Margin="0,0,10,0" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
-                    Text="MC百科" EventType="打开网页" EventData="https://www.mcmod.cn/" />
-        </StackPanel>
+        <local:MyListItem Margin="-2,0,10,0" Info="全球最大中文视频弹幕网站"
+            Logo="https://www.bilibili.com/favicon.ico" 
+            Title="Bilibili"
+            EventType="打开网页"
+            EventData="https://www.bilibili.com/"
+            Type="Clickable" />
+        <local:MyListItem Margin="-2,0,10,0" Info="世界最大的代码托管平台"
+            Logo="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" 
+            Title="Github"
+            EventType="打开网页" 
+            EventData="https://github.com/"
+            Type="Clickable" />
+        <local:MyListItem Margin="-2,0,10,0" Info="GitHub 项目仓库"
+            Logo="https://www.mcmod.cn/favicon.ico" 
+            Title="MC百科"
+            EventType="打开网页" 
+            EventData="https://www.mcmod.cn/"
+            Type="Clickable" />
     </StackPanel>
 </local:MyCard>
 
 <local:MyCard Title="关于此界面" Margin="0,0,0,15" CanSwap="True" IsSwapped="True">
     <StackPanel Margin="25,40,23,15">
         <local:MyListItem Margin="-2,0,10,0" Info="关于作者"
-               Logo="pack://application:,,,/images/blocks/RedstoneLampOn.png" 
+               Logo="https://5882886.github.io/favicon.ico" 
                Title="博客网站"
                EventType="打开网页"
                EventData="https://5882886.github.io/"
                Type="Clickable" />
         <local:MyListItem Margin="-2,0,10,0" Info="GitHub 项目仓库"
-               Logo="pack://application:,,,/images/blocks/CommandBlock.png" 
+               Logo="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" 
                Title="项目仓库"
                EventType="打开网页" 
-               EventData="https://github.com/5882886/My-Minecraft-Sever"
+               EventData="https://github.com/5882886/My-Minecraft-Server"
                Type="Clickable" />
     </StackPanel>
 </local:MyCard>
