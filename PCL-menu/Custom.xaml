@@ -45,6 +45,29 @@
     </StackPanel>
 </local:MyCard>
 
+
+<!-- 工具 -->
+<local:MyCard Margin="0,0,0,15" Title="下载器" CanSwap="True" IsSwaped="True">
+     <StackPanel Margin="25,40,23,15">
+          <local:MyHint Margin="0,0,0,10" IsWarn="False"
+               Text="使用 PCL 的高速多线程下载引擎下载任意文件。请注意，部分网站 (例如百度网盘) 可能会报错 (403) 已禁止，无法正常下载。" />
+          <local:MyHint Margin="0,0,0,10" IsWarn="True"
+               Text="链接必须为以 http:// 或 https:// 开头的网址，部分网址可能无法下载。" />
+          <Grid>
+               <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="1*" />
+               </Grid.ColumnDefinitions>
+               <local:MyTextBox HintText="下载链接：" Margin="0,0,0,0" Name="web" Height="30"
+                    Grid.Column="0" ToolTip="在此输入下载链接，点击右边按钮下载自定义文件。&#xA;注意不要按下 Enter 键，这会直接启动游戏。" />
+               <local:MyButton EventType="下载文件" EventData="{Binding ElementName=web,Path=Text}"
+                    Text="开始下载→" Margin="5,0,0,0" Height="30" Grid.Column="2" Padding="2,0,2,0"
+                    ColorType="Highlight" />
+          </Grid>
+     </StackPanel>
+</local:MyCard>
+
+
 <local:MyCard Title="常用网站汇总" Margin="0,0,0,15" CanSwap="true" IsSwapped="true">
     <StackPanel Margin="25,40,23,15">
         <local:MyListItem Margin="-2,0,10,0" Info="全球最大中文视频弹幕网站"
@@ -71,17 +94,23 @@
 <local:MyCard Title="关于此界面" Margin="0,0,0,15" CanSwap="True" IsSwapped="True">
     <StackPanel Margin="25,40,23,15">
         <local:MyListItem Margin="-2,0,10,0" Info="关于作者"
-               Logo="https://5882886.github.io/favicon.ico" 
-               Title="博客网站"
-               EventType="打开网页"
-               EventData="https://5882886.github.io/"
-               Type="Clickable" />
+            Logo="https://5882886.github.io/favicon.ico" 
+            Title="博客网站"
+            EventType="打开网页"
+            EventData="https://5882886.github.io/"
+            Type="Clickable" />
         <local:MyListItem Margin="-2,0,10,0" Info="本界面的源代码"
-               Logo="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" 
-               Title="项目仓库"
-               EventType="打开网页" 
-               EventData="https://github.com/5882886/My-Minecraft-Server/blob/main/PCL-menu/Custom.xaml"
-               Type="Clickable" />
+            Logo="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" 
+            Title="项目仓库"
+            EventType="打开网页" 
+            EventData="https://github.com/5882886/My-Minecraft-Server/"
+            Type="Clickable" />
+        <local:MyListItem Margin="-2,0,10,0" Info="灵感来源：简单主页"
+            Logo="pack://application:,,,/images/blocks/GoldBlock.png" 
+            Title="特别鸣谢"
+            EventType="打开网页" 
+            EventData="https://github.com/MFn233/PCL-Mainpage"
+            Type="Clickable" />
     </StackPanel>
 </local:MyCard>
 
