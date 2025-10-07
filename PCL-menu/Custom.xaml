@@ -4,7 +4,7 @@
      你也可以使用 Ctrl + F 快速查找。例如，若需要改变文本颜色，则搜索 “颜色” 即可。 -->
 
 
-<!-- 欢迎界面 -->>
+<!-- 欢迎界面 -->
 <local:MyCard Title="Welcome" Margin="0,0,0,15" CanSwap="false" IsSwapped="false">
     <StackPanel Margin="25,40,23,15">
         <TextBlock HorizontalAlignment="Center" Margin="0,0,0,0" Foreground="{DynamicResource ColorBrush2}" FontSize="20"
