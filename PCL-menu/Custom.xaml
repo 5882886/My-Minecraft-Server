@@ -12,6 +12,16 @@
         <Calendar HorizontalAlignment="Center" Margin="0,12,0,10" />
         <TextBlock HorizontalAlignment="Center" Margin="0,0,0,0" Foreground="Red" FontSize="16" FontWeight="Bold"
             Text="全世界无产者，联合起来!" />
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <local:MyIconTextButton Margin="0,5,0,6" Height="35" HorizontalAlignment="Right"
+                Text="刷新主页" EventType="刷新主页" Grid.Column="0"
+                LogoScale="0.8" ColorType="Highlight"
+                Logo="M256.455,8C322.724,8.119,382.892,34.233,427.314,76.685L463.029,40.97C478.149,25.851,504,36.559,504,57.941L504,192C504,205.255,493.255,216,480,216L345.941,216C324.559,216,313.851,190.149,328.97,175.029L370.72,133.279C339.856,104.38 299.919,88.372 257.49,88.006 165.092,87.208 87.207,161.983 88.0059999999999,257.448 88.764,348.009 162.184,424 256,424 297.127,424 335.997,409.322 366.629,382.444 371.372,378.283 378.535,378.536 382.997,382.997L422.659,422.659C427.531,427.531 427.29,435.474 422.177,440.092 378.202,479.813 319.926,504 256,504 119.034,504 8.001,392.967 8,256.002 7.999,119.193 119.646,7.755 256.455,8z" />
+        </Grid>
     </StackPanel>
 </local:MyCard> 
 
@@ -21,25 +31,44 @@
     <StackPanel Margin="25,40,23,15">
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" HorizontalAlignment="Left"
                     Text="欢迎加入智算11班MC服务器！本服务器完全公益，支持离线模式，专注游玩热门整合包，点击下方按钮复制服务器地址。" />
-        <local:MyImage Height="50" HorizontalAlignment="Center" Source="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvYy81Y2ZkYjY0NmNhMDRlNGI2L0VjX3ZMVFBTS0xsRnZuajFzWGRtdWlJQlYwMUZNUVFfeUhvTmRwWTYyZlE1NXc_ZT1lSXJmblA.png" />
+        <local:MyImage Height="50" HorizontalAlignment="Center" 
+            Source="https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvYy81Y2ZkYjY0NmNhMDRlNGI2L0VjX3ZMVFBTS0xsRnZuajFzWGRtdWlJQlYwMUZNUVFfeUhvTmRwWTYyZlE1NXc_ZT1lSXJmblA.png" />
         <TextBlock Text=""/>
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold"
-                    Text="当前服务器周目：落幕曲1.4.6"/>
+            Text="当前服务器周目：落幕曲1.4.6"/>
         <TextBlock Text=""/>
 
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*" />
                 <ColumnDefinition Width="1*" />
-                <ColumnDefinition Width="1*" />
             </Grid.ColumnDefinitions>
             <!-- 为按钮添加 Grid.Column 属性指定它所在的列，不要添加 Width 与 HorizontalAlignment 属性 -->
-            <local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35"  Padding="13,0,13,0"
-                    Text="复制服务器地址" EventType="复制文本" EventData="www.rtotjn4is.nyat.app" />
-            <local:MyButton Grid.Column="1" Margin="0,0,10,0" Height="35"  Padding="13,0,13,0"
-                    Text="下载整合包" EventType="打开网页" EventData="https://pan.quark.cn/s/4e69ec77f734" />
-            <local:MyButton Grid.Column="2" Margin="0,0,10,0" Height="35"  Padding="13,0,13,0"
-                    Text="快捷启动" EventType="启动游戏" EventData="落幕曲|www.rtotjn4is.nyat.app" ToolTip="服务器 IP：www.rtotjn4is.nyat.app" />
+            <local:MyButton Grid.Column="0" Margin="0,0,10,0" Height="35" Padding="13,0,13,0"
+                Text="复制服务器地址" 
+                EventType="复制文本" 
+                EventData="www.rtotjn4is.nyat.app" />
+            <local:MyButton Grid.Column="1" Margin="0,0,10,0" Height="35" Padding="13,0,13,0"
+                Text="下载整合包" 
+                EventType="打开网页" 
+                EventData="https://pan.quark.cn/s/4e69ec77f734" />
+        </Grid>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <local:MyButton Grid.Column="0" Margin="0,10,10,0" Height="35" Padding="13,0,13,0"
+                Text="快捷启动" 
+                EventType="启动游戏" 
+                EventData="落幕曲|www.rtotjn4is.nyat.app" 
+                ToolTip="服务器 IP：www.rtotjn4is.nyat.app" />
+            <local:MyButton Grid.Column="1" Margin="0,10,10,0" Height="35" Padding="13,0,13,0"
+                Text="更新日志" 
+                EventType="打开帮助" 
+                EventData="Update/Update.json" 
+                ToolTip="查看服务器上新内容！" />
         </Grid>
         
     </StackPanel>
