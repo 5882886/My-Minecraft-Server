@@ -3,6 +3,8 @@
      下列内容均基于 WPF 框架。你可以在继续之前先尝试自学 XAML 与 WPF 的基础，这能让你更轻松地理解下列内容。
      你也可以使用 Ctrl + F 快速查找。例如，若需要改变文本颜色，则搜索 “颜色” 即可。 -->
 
+
+<!-- 欢迎界面 -->>
 <local:MyCard Title="Welcome" Margin="0,0,0,15" CanSwap="false" IsSwapped="false">
     <StackPanel Margin="25,40,23,15">
         <TextBlock HorizontalAlignment="Center" Margin="0,0,0,0" Foreground="{DynamicResource ColorBrush2}" FontSize="20"
@@ -13,6 +15,8 @@
     </StackPanel>
 </local:MyCard> 
 
+
+<!-- 班级服务器介绍 -->
 <local:MyCard Title="智算11班MC服务器" Margin="0,0,0,15" CanSwap="false" IsSwapped="false">
     <StackPanel Margin="25,40,23,15">
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" HorizontalAlignment="Left"
