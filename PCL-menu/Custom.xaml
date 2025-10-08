@@ -65,7 +65,7 @@
             <local:MyButton Grid.Column="1" Margin="0,10,10,0" Height="35" Padding="13,0,13,0"
                 Text="更新日志" 
                 EventType="打开帮助" 
-                EventData="Update/Update.json" 
+                EventData="https://5882886.github.io/My-Minecraft-Server/PCL-menu/Update/Update.json" 
                 ToolTip="查看服务器上新内容！" />
         </Grid>
         
