@@ -8,7 +8,7 @@
 <local:MyCard Title="Welcome" Margin="0,0,0,15" CanSwap="false" IsSwapped="false">
     <StackPanel Margin="25,40,23,15">
         <TextBlock HorizontalAlignment="Center" Margin="0,0,0,0" Foreground="{DynamicResource ColorBrush2}" FontSize="20"
-            Text="欢迎使用!" />
+            Text="欢迎，{user}!" />
         <Calendar HorizontalAlignment="Center" Margin="0,12,0,10" />
         <TextBlock HorizontalAlignment="Center" Margin="0,0,0,0" Foreground="Red" FontSize="16" FontWeight="Bold"
             Text="全世界无产者，联合起来!" />
